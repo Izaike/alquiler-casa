@@ -1,0 +1,15 @@
+<style>
+    .margins{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btn-casas{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .img-thumbnail{
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+    }
+</style>
