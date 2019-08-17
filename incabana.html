@@ -1,95 +1,139 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-            <link rel="stylesheet" href="jquery/jquery-ui.css">
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            <link rel="stylesheet" href="pagcasas.css">
-            <title>Casa</title>
-            <script>
-            $( function() {
-                $('#datepickerSearchBar').datepicker();
-            });
-            </script>
-        </head>
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">Alquiler de casas</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="casas.html">Casas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">Mis Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <br>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="card margins">
-                            <img src="https://lajoya.ec/wp-content/uploads/2019/05/Modelo-W17-PB.jpg" class="rounded my-image" alt="#">
-                            <div class="card-body">
-                                <h5 class="card-title">1er Piso</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card margins">
-                            <img src="https://lajoya.ec/wp-content/uploads/2019/05/Modelo-W17-PA.jpg" class="rounded my-image" alt="#">
-                            <div class="card-body">
-                                <h5 class="card-title">2do Piso</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <h5 class="margins">Servicios adicionales</h5>
-                <div class="form-check margins">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Desayuno</label>
-                    <br>
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Wi-Fi</label>
-                    <br>
-                </div>
-                <br>
-                <h5 class="margins">Formas de pago</h5>
-                <div class="row btn-group text-center" style="margin-left: -5px">
-                    <div class="col text-center"><button class="btn btn-dark" type="button">Tarjeta de credito/debito</button></div>
-                    <div class="col text-center"><button class="btn btn-dark" type="button">Transferencia bancaria</button></div>
-                    <div class="col text-center"><button class="btn btn-dark" type="button">Deposito bancario</button></div>
-                </div>
-                <br>
-                <br>
-                <div class="form-group form-inline"><label style="margin-right: 5px; margin-left: 7px">Desde: </label><input type="date" class="form-control"></div>
-                <div class="form-group form-inline"><label style="margin-right: 5px; margin-left: 7px">Hasta: </label><input type="date" class="form-control"></div>
-                <button class="btn btn-primary" type="button">Reservar</button>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="jquery/jquery-ui.css" />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="pagcasas.css" />
+    <title>Casa</title>
+    <script>
+      $(function() {
+        $("#datepickerSearchBar").datepicker();
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Alquiler de casas</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="casas.html">Casas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservas.html">Mis Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card margins">
+            <img
+              src="https://lajoya.ec/wp-content/uploads/2019/05/Modelo-W17-PB.jpg"
+              class="rounded my-image"
+              alt="#"
+            />
+            <div class="card-body">
+              <h5 class="card-title">1er Piso</h5>
             </div>
-            <br>
-            <br>
-            <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-                <div class="container text-center">
-                    <small>Copyright &copy; A1Click</small>
-                </div>
-            </footer>
-        </body>
-    </html>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card margins">
+            <img
+              src="https://lajoya.ec/wp-content/uploads/2019/05/Modelo-W17-PA.jpg"
+              class="rounded my-image"
+              alt="#"
+            />
+            <div class="card-body">
+              <h5 class="card-title">2do Piso</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h5 class="margins">Servicios adicionales</h5>
+      <div class="form-check margins">
+        <input class="form-check-input" type="checkbox" />
+        <label class="form-check-label">Desayuno</label>
+        <br />
+        <input class="form-check-input" type="checkbox" />
+        <label class="form-check-label">Wi-Fi</label>
+        <br />
+      </div>
+      <br />
+      <h5 class="margins">Formas de pago</h5>
+      <div class="row btn-group text-center" style="margin-left: -5px">
+        <div class="col text-center">
+          <button class="btn btn-dark" type="button">
+            Tarjeta de credito/debito
+          </button>
+        </div>
+        <div class="col text-center">
+          <button class="btn btn-dark" type="button">
+            Transferencia bancaria
+          </button>
+        </div>
+        <div class="col text-center">
+          <button class="btn btn-dark" type="button">Deposito bancario</button>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="form-group form-inline">
+        <label style="margin-right: 5px; margin-left: 7px">Desde: </label
+        ><input type="date" class="form-control" />
+      </div>
+      <div class="form-group form-inline">
+        <label style="margin-right: 5px; margin-left: 7px">Hasta: </label
+        ><input type="date" class="form-control" />
+      </div>
+      <button class="btn btn-primary" type="button">Reservar</button>
+    </div>
+    <br />
+    <br />
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; A1Click</small>
+      </div>
+    </footer>
+  </body>
+</html>

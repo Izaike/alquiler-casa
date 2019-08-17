@@ -1,115 +1,162 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-            <link rel="stylesheet" href="jquery/jquery-ui.css">
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            <link rel="stylesheet" href="pagcasas.css">
-            <title>Alquiler casas</title>
-            <script>
-            $( function() {
-                $('#datepickerSearchBar').datepicker();
-            });
-            </script>
-        </head>
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">Alquileres de casa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="casas.html">Casas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">Mis Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <br>
-            <br>
-            <div class="container">
-                <label>Seleccione lo que busca...</label>
-                <br>
-                <div class="row btn-group text-center">
-                    <select class="form-control form-control-sm col-md-2 text-left btn-casas" searchable="Search here..">
-                        <option value="casa">Casa</option>
-                        <option value="depto">Departamento</option>
-                        <option value="cabana">Cabaña</option>
-                        <option value="hotel">Hotel</option>
-                    </select>
-                        
-                    <label class="mdb-main-label">Cuántos dormitorios:</label>
-                        
-                    <select class="form-control form-control-sm col-md-2 btn-casas" searchable="Search here..">
-                        <option value="1"> 1 </option>
-                        <option value="2"> 2 </option>
-                        <option value="3"> 3 </option>
-                        <option value="4"> 4 </option>
-                        <option value="4"> Más de 4 </option>
-                    </select>
-                    <p>Fecha: <input type="date"></p>
-                    <button class="btn btn-primary margins" type="button">Buscar</button>
-                </div>
-                <br>
-                <br>
-                <div class="row">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <a href="incasa.html"><img src="https://lajoya.ec/wp-content/uploads/2015/03/villaZM-1108x990-1.jpg" class="rounded img-thumbnail" alt="#"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Casa</h5>
-                            <p class="card-text">Dormitorios: 5<br>
-                            Baños: 2<br>
-                            Ubicación: Hipolito Yrigoyen 500</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <a href="indepto.html"><img src="https://lajoya.ec/wp-content/uploads/2015/03/df-2.jpg" class="rounded img-thumbnail" alt="#"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Departamento</h5>
-                            <p class="card-text">Dormitorios: 2<br>
-                            Baños: 1<br>
-                            Ubicación: Lavalle 400</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <a href="incabana.html"><img src="https://lajoya.ec/wp-content/uploads/2015/02/H17-1108x990-1.jpg" class="rounded img-thumbnail" alt="#"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Cabaña</h5>
-                            <p class="card-text">Dormitorios: 3<br>
-                            Baños: 2<br>
-                            Ubicación: Chile 644</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="jquery/jquery-ui.css" />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="pagcasas.css" />
+    <title>Alquiler casas</title>
+    <script>
+      $(function() {
+        $("#datepickerSearchBar").datepicker();
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Alquileres de casa</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="casas.html">Casas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservas.html">Mis Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <div class="container">
+      <label>Seleccione lo que busca...</label>
+      <br />
+      <div class="row btn-group text-center">
+        <select
+          class="form-control form-control-sm col-md-2 text-left btn-casas"
+          searchable="Search here.."
+        >
+          <option value="casa">Casa</option>
+          <option value="depto">Departamento</option>
+          <option value="cabana">Cabaña</option>
+          <option value="hotel">Hotel</option>
+        </select>
+
+        <label class="mdb-main-label">Cuántos dormitorios:</label>
+
+        <select
+          class="form-control form-control-sm col-md-2 btn-casas"
+          searchable="Search here.."
+        >
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3 </option>
+          <option value="4"> 4 </option>
+          <option value="4"> Más de 4 </option>
+        </select>
+        <p>Fecha: <input type="date" /></p>
+        <button class="btn btn-primary margins" type="button">Buscar</button>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <a href="incasa.html"
+              ><img
+                src="https://lajoya.ec/wp-content/uploads/2015/03/villaZM-1108x990-1.jpg"
+                class="rounded img-thumbnail"
+                alt="#"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Casa</h5>
+              <p class="card-text">
+                Dormitorios: 4<br />
+                Baños: 2<br />
+                Ubicación: Hipolito Yrigoyen 500
+              </p>
             </div>
-            <br>
-            <br>
-            <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-                <div class="container text-center">
-                    <small>Copyright &copy; A1Click</small>
-                </div>
-            </footer>
-        </body>
-    </html>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <a href="indepto.html"
+              ><img
+                src="https://lajoya.ec/wp-content/uploads/2015/03/df-2.jpg"
+                class="rounded img-thumbnail"
+                alt="#"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Departamento</h5>
+              <p class="card-text">
+                Dormitorios: 2<br />
+                Baños: 1<br />
+                Ubicación: Lavalle 400
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <a href="incabana.html"
+              ><img
+                src="https://lajoya.ec/wp-content/uploads/2015/02/H17-1108x990-1.jpg"
+                class="rounded img-thumbnail"
+                alt="#"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Cabaña</h5>
+              <p class="card-text">
+                Dormitorios: 3<br />
+                Baños: 2<br />
+                Ubicación: Chile 644
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    <br />
+    <br />
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; A1Click</small>
+      </div>
+    </footer>
+  </body>
+</html>
