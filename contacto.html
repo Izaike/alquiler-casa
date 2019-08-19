@@ -1,73 +1,96 @@
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-            <link rel="stylesheet" href="jquery/jquery-ui.css">
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            <link rel="stylesheet" href="pagcasas.css">
-            <title>Contacto</title>
-        </head>
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">Alquileres de casa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="casas.html">Casas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reservas.html">Mis Reservas</a>
-                        </li>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    </ul>
-                </div>
-            </nav>
-            <br>
-            <br>
-            <div class="container">
-                <h2>Contactanos</h2>
-                <br>
-                <form>
-                    <div class="form-group">
-                        <label>Nombre<span style="color: red">*</span></label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Email<span style="color: red">*</span></label>
-                        <input type="email" class="form-control">
-                        <small class="form-text text-muted">No le mostraremos a nadie su dirección de correo.</small>
-                    </div>
-                    <div class="form-group">
-                        <label>Teléfono (Opcional)</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Mensaje</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-            <br>
-            <br>
-            <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-                <div class="container text-center">
-                    <small>Copyright &copy; A1Click</small>
-                </div>
-            </footer>
-        </body>
-    </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="jquery/jquery-ui.css" />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="pagcasas.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Alquileres de casa</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="casas.html">Casas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservas.html">Mis Reservas</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <div class="container">
+      <div class="card">
+        <h2 class="margins">Contactanos</h2>
+        <br />
+        <form>
+          <div class="form-group margins">
+            <label>Nombre<span style="color: red">*</span></label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="form-group margins">
+            <label>Email<span style="color: red">*</span></label>
+            <input type="email" class="form-control" />
+            <small class="form-text text-muted"
+              >No le mostraremos a nadie su dirección de correo.</small
+            >
+          </div>
+          <div class="form-group margins">
+            <label>Teléfono (Opcional)</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="form-group margins">
+            <label>Mensaje</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary margins">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; A1Click</small>
+      </div>
+    </footer>
+  </body>
+</html> -->
