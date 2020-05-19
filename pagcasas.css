@@ -1,16 +1,22 @@
-.margins{
-    margin-left: 10px;
-    margin-right: 10px;
+.margins {
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.btn-casas{
-    margin-right: 10px;
-    margin-left: 10px;
+.btn-casas {
+  margin-right: 10px;
+  margin-left: 10px;
 }
-.img-thumbnail{
-    border-radius: 5px;
-    width: 300px;
-    height: 300px;
+.img-thumbnail {
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
 }
-.my-image{
-    width: 100%;
+.my-image {
+  width: 100%;
+}
+.footerpos {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
